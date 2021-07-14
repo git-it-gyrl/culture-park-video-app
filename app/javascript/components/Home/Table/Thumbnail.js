@@ -4,6 +4,9 @@ const Thumbnail = () => {
 	return (
 		<div className="pt-4 pb-4">
 		 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kvdHqS3ryw0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> 
+		 <button style={{marginLeft: "10px", marginTop: "10px"}} onClick={()=>this.props.handleClick(this.props.auPair)}>
+        <a>Favorite ⭐️ </a>
+        </button>
 		</div>
 	)
 }
